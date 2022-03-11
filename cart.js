@@ -34,9 +34,13 @@ const cart = [
 ]
 
 //CODE HERE
+let thisOne = function(element){
+    parseInt(element)
+    return element
+}
+const summedPrice = cart.reduce(thisOne)
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
-
+console.log(summedPrice)
 
 //////////////////PROBLEM 2////////////////////
 /*  

@@ -31,7 +31,14 @@
 */
 
 //CODE HERE
-
+const pizza = {
+    name: `Pizza`,
+    price: 12,
+    category: `Entree`,
+    popularity: 3,
+    rating: 42,
+    tags: [`Good`, `Great`,`Decent`] 
+};
 
 
 //////////////////PROBLEM 2////////////////////
@@ -43,7 +50,7 @@
 */
 
 //CODE HERE
-
+// console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -53,7 +60,7 @@
 */
 
 //CODE HERE
-
+// console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -63,8 +70,8 @@
 */
 
 //CODE HERE
-
-
+// let {price: pizzaPrice} = pizza
+// console.log(pizzaPrice)
 /*
     Fourth, and last, destructure the category
     property.
@@ -73,8 +80,8 @@
 */
 
 //CODE HERE
-
-
+// let {category: pizzaCat} = pizza
+// console.log(pizzaCat)
 //////////////////PROBLEM 3////////////////////
 /* 
     Create an array with about 5 objects in it.
@@ -88,6 +95,22 @@
 */
 
 //CODE HERE
+class FoodItems {
+    constructor(name, price, category, popularity, rating, tags){
+        this.name = name;
+        this.price = price;
+        this.category = category;
+        this.popularity = popularity;
+        this.rating = rating;
+        this.tags = tags
+    }
+}
+let burger = new FoodItems(`Burger`, 15, `Entree`, 13, 50, [`good`, `great2`])
+let fries = new FoodItems(`fries`, 8, `Side`, 16, 47, [`Side`,`Great3`])
+let soda = new FoodItems(`Soda`, 3, `Drink`, 23, 61, [`Liquid`,`Soda`])
+let water = new FoodItems(`water`, 0, `Drink`, 20, 74, [`Liquid`, `water`])
+
+let foodArr = [pizza, burger, fries, soda, water]
 
 
 
@@ -104,9 +127,11 @@
 */
 
 //CODE HERE
-
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
-
+// let filt = function(element){
+//     return element === `Side`
+// }
+// const filteredFood = foodArr.filter(filt)
+// console.log(filteredFood)
 
 
 //////////////////PROBLEM 5////////////////////

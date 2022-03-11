@@ -23,8 +23,10 @@
 
 //CODE HERE
 
-
-
+// const greetuser = username => {
+//     return console.log(`Welcome back, ${username}`)
+// }
+// greetuser(`Kenton`)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -50,8 +52,22 @@
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
+// const canWeDeliver = function(zipCode){
+//     for (i = 0; i < deliveryAreaZipCodes.length; i++){
+//         if (zipCode === deliveryAreaZipCodes[i]){
+//             console.log(`You're in our delivery zone!`)
+//         } else console.log(`Sorry, we can't deliver to that address`)
+//     }
+// }
+    
+//     canWeDeliver(85205)
 
 
+
+
+
+
+// console.log(canWeDeliver(85205))
 
 /* 
     Problem 2 Continued
@@ -71,8 +87,12 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 */
 
 // CODE HERE
-
-
+// const canWeDeliverTwo = function(zipCode){
+//     if (deliveryAreaZipCodes.includes(zipCode) = true);{
+//         console.log(`You are in our delivery zone!`);
+//     } console.log(`Sorry, we can not deliver to that address.`)
+// }
+// canWeDeliverTwo(85205)
 //////////////////PROBLEM 3////////////////////
 /* 
     Below is an array of objects that have some
@@ -110,6 +130,8 @@ const deals = [
 
 
 
+// console.log(dealChange)
+console.log(deals.title)
 /*
     The restaurant is going to continue its
     family deal for another month. 
@@ -123,4 +145,5 @@ const deals = [
     to be displaying wrong on the live site.
 */
 
-//CODE HERE
+// CODE HERE
+
