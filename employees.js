@@ -64,9 +64,9 @@ let empOne = new Employee(`Jess`, `weekday mornings, weekday afternoons`)
 */
 
 //CODE HERE
-// let empTwo = (...empOne)
+let empTwo = {...empOne}
 
-// let empTwo.name = `Nick`
+empTwo.name = `Nick`
 
 
 //////////////////PROBLEM 2////////////////////

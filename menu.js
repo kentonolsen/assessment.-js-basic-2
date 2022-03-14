@@ -127,10 +127,8 @@ let foodArr = [pizza, burger, fries, soda, water]
 */
 
 //CODE HERE
-// let filt = function(element){
-//     return element === `Side`
-// }
-// const filteredFood = foodArr.filter(filt)
+// const filteredFood = foodArr.filter(foodItem2=> foodItem2.tags.includes(`Liquid`))
+
 // console.log(filteredFood)
 
 
@@ -174,7 +172,9 @@ let foodArr = [pizza, burger, fries, soda, water]
 */
 
 //CODE HERE
-
+const filterByProperty = function(property, number, type) {
+    
+}
 
 /*
     Invoke the `filterByProperty` function passing

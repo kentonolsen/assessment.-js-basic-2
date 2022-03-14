@@ -34,13 +34,11 @@ const cart = [
 ]
 
 //CODE HERE
-let thisOne = function(element){
-    parseInt(element)
-    return element
-}
-const summedPrice = cart.reduce(thisOne)
+// const summedPrice = cart.reduce((acc, cv)=> {
+//     return acc + cv.price
+// },0)
 
-console.log(summedPrice)
+// console.log(summedPrice)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -58,9 +56,11 @@ console.log(summedPrice)
 */
 
 //CODE HERE
+// function calcFinalPrice(cartTotal, couponValue, tax){
+//     return (cartTotal * tax) + cartTotal - couponValue
+// }
 
-
-
+// console.log(calcFinalPrice(15,1,0.1))
 //////////////////PROBLEM 3////////////////////
 /*  
     In this problem, you'll create a model for 
@@ -83,7 +83,7 @@ console.log(summedPrice)
 
 /*
     TEXT ANSWER HERE
-
+My customer object will include, customer number, items ordered, time ordered and special tags
 */
 
 /*
@@ -92,3 +92,9 @@ console.log(summedPrice)
 */
 
 //CODE HERE
+let customer = {
+    customer: 15,
+    itemsOrdered: [`item1`,`item2`,`item3`],
+    timeOrdered: `7:08 PM`,
+    specialTags: [`tag1`,`tag2`]
+}
